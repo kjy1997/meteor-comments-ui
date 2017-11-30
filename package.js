@@ -1,8 +1,8 @@
 Package.describe({
-  name: 'arkham:comments-ui',
+  name: 'kjy1997:comments-ui',
   summary: 'Simple templates for disqus-like comment functionality',
   version: '1.4.3',
-  git: 'https://github.com/komentify/meteor-comments-ui.git'
+  git: 'https://github.com/kjy1997/meteor-comments-ui.git'
 });
 
 Npm.depends({
@@ -18,6 +18,7 @@ Package.onUse(function(api) {
   api.use([
     'accounts-base',
     'ecmascript',
+    'email',
     'underscore',
     'mongo-livedata',
     'templating',
