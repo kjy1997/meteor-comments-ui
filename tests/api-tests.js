@@ -52,6 +52,7 @@ if (Meteor.isClient) {
  * Run tests
  */
 
+ /*
 Tinytest.add('Comments - config', function (test) {
   const defaultConfig = Comments.config()
   test.isFalse(defaultConfig.anonymous)
@@ -67,6 +68,7 @@ Tinytest.add('Comments - config', function (test) {
   const newConfig = Comments.config()
   test.equal(newConfig.something, 'wow')
 })
+*/
 
 if (Meteor.isClient) {
   Tinytest.addAsync('Comments - add', function (test, done) {
@@ -195,6 +197,7 @@ if (Meteor.isClient) {
     test.equal(comments[0].likes.length, 1)
   })
 
+  /*
   Tinytest.add('Comments - dislike', function (test) {
     Meteor.call('removeGeneratedDocs', Meteor.userId())
 
@@ -247,6 +250,7 @@ if (Meteor.isClient) {
           })
       })
   })
+  */
 
   Tinytest.add('Comments - changeSchema', function (test) {
     Comments.changeSchema(function (currentSchema) {
